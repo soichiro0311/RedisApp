@@ -8,6 +8,7 @@ export class DailyRanking {
     private readonly redis: IORedis.Redis;
 
     constructor(options?: IORedis.RedisOptions) {
+        // ここの引数にポート、エントリポイントを上書き
         this.redis = new IORedis(options);
     }
 
